@@ -7,3 +7,7 @@ parameters:
   displayName: 'Use experimental build process?'
   type: boolean
   default: false
+
+steps:
+- script: echo ${{ parameters.yesNo }}
+  
