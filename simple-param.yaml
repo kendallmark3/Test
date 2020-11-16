@@ -58,6 +58,5 @@ jobs:
   - script: echo ${{ parameters.yesNo }}
 - job: myStep
   steps:
-  - script: echo ${{ parameters.myStep }}
   - ${{ parameters.myStep }}
   
