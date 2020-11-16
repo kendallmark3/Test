@@ -10,8 +10,6 @@ parameters:
 
 steps:
 - script: echo ${{ parameters.yesNo }}
-
--step:
   - ${{ if eq(parameters.experimentalTemplate, true) }}:
     - template: experimental.yml
   - ${{ if not(eq(parameters.experimentalTemplate, true)) }}:
